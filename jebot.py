@@ -27,23 +27,7 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm AnyDL Bot
-
-I can download video or audio from Youtube. Made by @ImJanindu 🇱🇰
-
-Hit help button to find out more about how to use me</b>""",   
-                            reply_markup=InlineKeyboardMarkup(
-                                [[
-                                        InlineKeyboardButton(
-                                            "Help", callback_data="help"),
-                                        InlineKeyboardButton(
-                                            "Channel", url="https://t.me/Infinity_BOTs")
-                                    ],[
-                                      InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
-                                    ]]
-                            ),        
-            disable_web_page_preview=True,        
+               text="""<b>BOT STARTED SUCCESSFULLY </b>""",        
             parse_mode="html")
 
 @Jebot.on_message(filters.command("help"))
